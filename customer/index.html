@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Jaipur Prints — premium home textile catalog">
+<meta name="theme-color" content="#26382F"><title>Jaipur Prints | Home & Living</title><link rel="stylesheet" href="home.css"></head>
+<body>
+<div class="announcement">NEW SEASON COLLECTION · DIRECT WHATSAPP ORDERS · QUALITY HOME TEXTILES</div>
+<header class="nav"><a class="brand" href="#home"><img class="logo-img" src="../assets/jaipur-prints-logo.jpg" alt="Jaipur Prints logo"><span><b>Jaipur Prints</b><small>HAND BLOCK PRINTED COTTON</small></span></a><nav class="main-nav"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#faq">FAQ</a></nav><div class="nav-actions"><button class="wishlist-nav" onclick="showWishlist()">♡ <span id="wishCount">0</span></button><a id="topWa" class="wa" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a><button class="menu" onclick="toggleMenu()">☰</button></div></header>
+<div id="mobileMenu" class="mobile"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#collection">Collection</a><a href="#story">Our Story</a><a href="#faq">FAQ</a></div>
+
+<main>
+<section id="home" class="hero"><div class="hero-copy"><span class="eyebrow">EST. 2026 · HOME TEXTILES</span><h1>Comfort that feels<br><em>like home.</em></h1><p>Thoughtfully selected textiles for bedrooms, bathrooms and everyday living — combining comfort, timeless design and practical everyday use.</p><div class="hero-actions"><a class="primary" href="#collection">Explore collection <span>→</span></a><a class="quiet" href="#story">Our story</a></div><div class="trust"><span>✓ Quality fabrics</span><span>✓ Curated designs</span><span>✓ WhatsApp ordering</span></div></div><div class="hero-art"><div class="fabric main"></div><div class="fabric one"></div><div class="fabric two"></div><div class="hero-label"><small>CURATED FOR</small><b>EVERYDAY<br>LIVING</b></div></div></section>
+
+<section class="ticker"><span>BEDROOM</span><i>✦</i><span>BATH</span><i>✦</i><span>EVERYDAY</span><i>✦</i><span>HOME</span><i>✦</i><span>BEDROOM</span><i>✦</i><span>BATH</span><i>✦</i><span>EVERYDAY</span></section>
+
+<section id="categories" class="section"><div class="head"><div><span class="eyebrow">BROWSE COLLECTION</span><h2>Shop by category</h2></div><a href="#collection" class="text-link">View all →</a></div><div id="categoryGrid" class="category-grid"></div></section>
+
+<section id="collection" class="collection"><div class="section"><div class="head"><div><span class="eyebrow">FEATURED PRODUCTS</span><h2>Selected for you</h2><p class="sub">A few favorites from our current collection.</p></div><div class="collection-actions"><label class="search">⌕ <input id="search" placeholder="Search products"></label><select id="sort"><option value="featured">Featured</option><option value="az">A–Z</option><option value="low">Price: Low</option><option value="high">Price: High</option></select></div></div><div id="filters" class="filters"></div><div id="products" class="products"></div><div class="center"><a class="outline" href="catalog.html">Browse full collection →</a></div></div></section>
+
+<section class="benefits"><div><b>01</b><strong>Curated selection</strong><span>Thoughtful everyday designs</span></div><div><b>02</b><strong>Quality first</strong><span>Comfort-focused textiles</span></div><div><b>03</b><strong>Easy ordering</strong><span>Directly through WhatsApp</span></div><div><b>04</b><strong>Personal enquiry</strong><span>Ask us about any product</span></div></section>
+
+<section id="story" class="story"><div class="story-art"><div class="seal">MT<br><small>EST. 2026</small></div></div><div><span class="eyebrow">OUR STORY</span><h2>Everyday essentials,<br><em>chosen thoughtfully.</em></h2><p>Jaipur Prints brings together home essentials with an eye for fabric, print and practical design. Our catalog keeps discovery simple: browse, choose what you like and enquire directly.</p><div class="stats"><div><b>04+</b><span>Core categories</span></div><div><b>100%</b><span>Easy browsing</span></div></div></div></section>
+
+<section id="faq" class="faq section"><div class="head"><div><span class="eyebrow">HELP CENTER</span><h2>Frequently asked</h2></div></div><div class="faq-list"><details><summary>How can I place an order?</summary><p>Open any product and tap Order on WhatsApp. The product details are automatically added to your WhatsApp message.</p></details><details><summary>Can I ask about availability?</summary><p>Yes. Use WhatsApp to ask about stock, sizes, colors, designs or other product details before ordering.</p></details><details><summary>Can I request another design?</summary><p>Send us an enquiry on WhatsApp. The catalog can be expanded with new designs and categories over time.</p></details><details><summary>Do prices include delivery?</summary><p>Delivery and final order details should be confirmed directly with us on WhatsApp.</p></details></div></section>
+
+<section id="contact" class="contact"><div><span class="eyebrow">LET'S CONNECT</span><h2>Have a question?<br><em>Let's talk.</em></h2><p>For availability, bulk enquiries or product questions, message us directly.</p></div><a id="contactWa" class="light-btn" href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a></section>
+</main>
+
+<button type="button" class="floating-wa" id="floatingWa" onclick="openWhatsApp()">◔<span>Chat on WhatsApp</span></button>
+<div id="toast" class="toast"></div>
+<div id="wishlistModal" class="modal" onclick="closeWishlist(event)"><div class="wishlist-box" onclick="event.stopPropagation()"><button class="close" onclick="closeWishlist()">×</button><span class="eyebrow">YOUR SAVED ITEMS</span><h2>Wishlist</h2><div id="wishlistItems"></div></div></div>
+<footer><div class="footer-brand"><img class="logo-img" src="../assets/jaipur-prints-logo.jpg" alt="Jaipur Prints logo"><b>Jaipur Prints</b></div><div class="footer-links"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#collection">Collection</a><a href="#faq">FAQ</a></div><div>© <span id="year"></span> Jaipur Prints</div></footer>
+<script type="module" src="app.js"></script></body></html>

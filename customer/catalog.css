@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap');
+:root{--ink:#26382F;--muted:#746E63;--line:#E5D8C5;--paper:#FCFAF6;--accent:#B58A4B}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}a{text-decoration:none;color:inherit}button,input,select{font:inherit}
+.nav{height:78px;padding:0 6.5%;background:#FFFDF8;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:10px}.logo{width:39px;height:39px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:600 13px Georgia,serif}.brand b{display:block;font-size:14px}.brand small{display:block;color:#8B8376;font-size:8px;letter-spacing:2px;margin-top:3px}.nav nav{display:flex;gap:28px;font-size:12px;color:#625D53}.nav nav a.active{color:var(--ink);font-weight:700}.wa{border:1px solid var(--ink);border-radius:99px;padding:10px 15px;font-size:11px;font-weight:700}.menu{display:none;border:0;background:none;font-size:22px}.mobile{display:none}
+.catalog-hero{padding:78px 8%;display:flex;justify-content:space-between;align-items:end;gap:50px;background:linear-gradient(115deg,#F3E7D5,#FCFAF6 68%);border-bottom:1px solid var(--line)}.eyebrow{font-size:9px;letter-spacing:2.3px;font-weight:700;color:var(--accent);display:block;margin-bottom:14px}.catalog-hero h1{font:500 clamp(48px,6vw,72px)/.98 "Playfair Display",Georgia,serif;letter-spacing:-2px;margin:0}.catalog-hero h1 em{color:var(--accent)}.catalog-hero p{color:var(--muted);font-size:13px;line-height:1.8;max-width:550px;margin:20px 0 0}.hero-stats{display:flex;border-top:1px solid #d7cbbf;min-width:290px}.hero-stats div{padding:16px 35px 0 0}.hero-stats b{display:block;font:500 31px "Playfair Display",serif}.hero-stats span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.categories-section{padding:72px 7% 45px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px}.section-head h2,.toolbar h2{font:500 34px "Playfair Display",Georgia,serif;margin:0}.result-note{font-size:10px;color:var(--muted)}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.category-card{height:185px;border:0;border-radius:7px;overflow:hidden;position:relative;cursor:pointer;text-align:left;color:#fff;padding:0}.cat-art{position:absolute;inset:0;transition:.45s}.category-card:hover .cat-art{transform:scale(1.05)}.tone-all .cat-art{background:linear-gradient(135deg,#7e6d5b,#d8c6b1)}.tone-bedsheet .cat-art{background:linear-gradient(135deg,#ad9377,#e4d4c2 52%,#89745e)}.tone-bedcover .cat-art{background:linear-gradient(135deg,#6f6b62,#c5b6a5)}.tone-towel .cat-art{background:linear-gradient(135deg,#D7C1A6,#F2E8DB)}.tone-tote .cat-art{background:linear-gradient(135deg,#8d907c,#d5cfbf)}.cat-overlay{position:absolute;inset:0;padding:18px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(transparent,#211c18d9)}.cat-overlay small{font-size:9px;opacity:.7}.cat-overlay b{font:500 24px "Playfair Display",serif;margin:4px 0}.cat-overlay span{font-size:9px}.category-card.selected{outline:2px solid var(--ink);outline-offset:3px}
+.products-section{padding:48px 7% 85px;background:#f3eee8}.toolbar{display:flex;justify-content:space-between;align-items:end;gap:25px}.toolbar h2{font-size:39px}.toolbar p{margin:7px 0 0;color:var(--muted);font-size:10px}.toolbar-actions{display:flex;gap:8px}.search{height:42px;width:240px;background:#fff;border:1px solid var(--line);border-radius:6px;display:flex;align-items:center;padding:0 11px}.search span{font-size:21px;color:#8a7d72;margin-right:7px}.search input{border:0;outline:0;width:100%;background:none;font-size:11px}.toolbar-actions select{height:42px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:0 10px;font-size:11px;color:#625D53}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:28px 0 22px}.filter{border:1px solid #d9cfc4;background:transparent;color:#746a62;border-radius:99px;padding:9px 14px;font-size:10px;cursor:pointer}.filter.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.product{background:#fff;border:1px solid #ebe2d9;border-radius:7px;overflow:hidden;transition:.25s}.product:hover{transform:translateY(-3px);box-shadow:0 18px 35px #33281f12}.photo{aspect-ratio:1/1;position:relative;overflow:hidden;background:#e8e0d7}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.45s}.product:hover .photo img{transform:scale(1.035)}.badge{position:absolute;top:11px;left:11px;background:#FFFDF8;padding:6px 9px;font-size:8px;text-transform:uppercase;letter-spacing:1px}.view{position:absolute;bottom:10px;left:10px;right:10px;border:0;border-radius:5px;background:#FFFDF8e8;padding:10px;font-size:10px;font-weight:700;opacity:0;transform:translateY(8px);transition:.25s;cursor:pointer}.product:hover .view{opacity:1;transform:none}.product-info{padding:15px}.meta{display:flex;justify-content:space-between;color:#998d82;font-size:8px;text-transform:uppercase;letter-spacing:1px}.product-info h3{font-size:14px;margin:9px 0 7px}.product-info p{color:#887d73;font-size:10px;line-height:1.5;min-height:31px;margin:0}.product-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #eee8e1;margin-top:13px;padding-top:11px}.product-foot b{font-size:15px}.product-foot a{font-size:9px;font-weight:700;border-bottom:1px solid #C9BBA5}.load-more{display:block;margin:35px auto 0;border:1px solid var(--ink);background:transparent;border-radius:6px;padding:12px 22px;font-size:11px;font-weight:700;cursor:pointer}.empty{grid-column:1/-1;text-align:center;padding:65px;color:var(--muted)}.empty b,.empty span{display:block}.empty span{font-size:11px;margin-top:6px}
+footer{background:#211c18;color:#d7cec5;padding:28px 7%;display:flex;justify-content:space-between;align-items:center;font-size:10px}footer a{color:#fff;font-weight:700}
+@media(max-width:950px){.nav{padding:0 5%}.nav nav{display:none}.menu{display:block}.wa{margin-left:auto;margin-right:12px}.mobile{position:fixed;display:flex;flex-direction:column;gap:17px;top:78px;left:0;right:0;background:#fff;padding:22px 6%;z-index:19;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:.25s;font-size:12px}.mobile.open{transform:translateY(0)}.catalog-hero{display:block;padding:65px 7%}.hero-stats{margin-top:35px}.category-grid,.product-grid{grid-template-columns:repeat(2,1fr)}.toolbar{display:block}.toolbar-actions{margin-top:18px}.search{flex:1}.categories-section,.products-section{padding-left:6%;padding-right:6%}}
+@media(max-width:560px){.brand b{font-size:13px}.catalog-hero h1{font-size:48px}.category-grid,.product-grid{grid-template-columns:1fr 1fr;gap:9px}.category-card{height:165px}.cat-overlay{padding:13px}.cat-overlay b{font-size:19px}.toolbar h2{font-size:32px}.toolbar-actions{width:100%}.search{width:auto}.toolbar-actions select{width:120px}.filters{overflow-x:auto;flex-wrap:nowrap}.filter{white-space:nowrap}.product-info{padding:12px}.product-info p{display:none}.product-foot{margin-top:10px}.product-foot b{font-size:13px}.view{display:none}footer{flex-wrap:wrap;gap:13px}}
+
+
+/* Jaipur Prints brand system — based on supplied logo */
+:root{
+  --jp-green:#26382F;
+  --jp-green-deep:#1F382F;
+  --jp-terracotta:#B35E50;
+  --jp-gold:#B58A4B;
+  --jp-ivory:#FCFAF6;
+  --jp-cream:#F3E7D5;
+  --jp-line:#E5D8C5;
+}
+.brand-logo-img,.logo-img{
+  width:42px;height:42px;object-fit:cover;border-radius:50%;
+  background:var(--jp-ivory);display:block;border:1px solid rgba(181,138,75,.45);
+}
+.logo-img{width:39px;height:39px}
+.brand-logo-img{width:42px;height:42px}
+.admin-logo{
+  width:55px;height:55px;object-fit:cover;border-radius:50%;
+  border:1px solid rgba(181,138,75,.6);background:var(--jp-ivory);
+  display:block;margin:0 auto;
+}
+.sidebar .admin-logo{
+  width:40px;height:40px;margin:0;
+}
+.login-card .admin-logo{margin:0 auto 10px}
+.eyebrow{color:var(--jp-gold)!important}
+.hero em,.catalog-hero h1 em,.statement em{color:var(--jp-terracotta)!important}
+.btn-primary,.primary{background:var(--jp-green-deep)!important}
+.btn-primary:hover,.primary:hover{background:#2C4A40!important}
+.wa-top,.wa{border-color:var(--jp-green)!important}
+
